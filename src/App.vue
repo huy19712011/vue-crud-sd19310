@@ -110,56 +110,56 @@ const saveStudent = () => {
     </nav>
   </header>
   <body>
-    <div class="card">
-      <div class="card-header">
-        <h4>Add Student</h4>
-      </div>
-      <div class="card-body">
-        <div class="mb-3">
-          <label for="">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="model.student.name"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="">Course</label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="model.student.course"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="">Email</label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="model.student.email"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="">Phone</label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="model.student.phone"
-          />
-        </div>
-        <div class="mb3">
-          <button
-            type="button"
-            class="btn btn-primary"
-            @click="saveStudent"
-          >
-            Save
-          </button>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h4>Add Student</h4>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              v-model="model.student.name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="">Course</label>
+            <input
+              type="text"
+              class="form-control"
+              v-model="model.student.course"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              v-model="model.student.email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="">Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              v-model="model.student.phone"
+            />
+          </div>
+          <div class="mb3">
+            <button
+              type="button"
+              class="btn btn-primary"
+              @click="saveStudent"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div class="card">
         <div class="card-header">
           <h4>
@@ -167,8 +167,8 @@ const saveStudent = () => {
             <RouterLink
               to="/students/create"
               class="btn btn-primary float-end"
-              >Add Student
-            </RouterLink>
+              >Add Student</RouterLink
+            >
           </h4>
         </div>
         <div class="card-body">
@@ -180,7 +180,7 @@ const saveStudent = () => {
                 <th>Course</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Created at</th>
+                <th>Created At</th>
                 <th>Actions</th>
               </tr>
             </thead>
