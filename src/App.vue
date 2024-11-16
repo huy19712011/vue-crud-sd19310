@@ -41,6 +41,18 @@ const model = ref({
     phone: "",
   },
 });
+
+const saveStudent = () => {
+  students.value.push({
+    id: students.value.length + 1,
+    name: model.value.student.name,
+    course: model.value.student.course,
+    email: model.value.student.email,
+    phone: model.value.student.phone,
+    created_at: new Date().toISOString().split("T")[0],
+    updated_at: new Date().toISOString().split("T")[0],
+  });
+};
 </script>
 
 <template>
